@@ -31,7 +31,7 @@
             this.currentIdex++;
         }
 
-        public void Remove(int index) // [ 2 4 6 ]
+        public void Remove(int index)
         {
             this.ValidateIdexIsInRange(index);
 
