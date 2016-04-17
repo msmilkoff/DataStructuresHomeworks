@@ -40,6 +40,7 @@ public class CircularQueue<T>
         }
 
         var dequeuedItem = this.items[this.startIndex];
+        this.items[this.startIndex] = default(T);
         this.startIndex = (this.startIndex + 1) % this.items.Length;
 
         this.Count--;
